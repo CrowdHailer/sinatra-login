@@ -1,4 +1,5 @@
 ENV['RACK_ENV'] = 'test'
+ENV['RACK_SESSION_SECRET'] = 'dummy'
 
 require 'minitest/autorun'
 

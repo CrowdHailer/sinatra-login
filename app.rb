@@ -4,8 +4,8 @@ ENV['RACK_ENV'] ||= 'development'
 require 'bundler'
 Bundler.require :default, ENV['RACK_ENV'].to_sym
 
-# require_relative 'config/boot'
 Dir[File.dirname(__FILE__) + '/lib/**/*.rb'].each {|file| require file }
+# require_relative 'config/boot'
 
 class Owner
   def initialize
